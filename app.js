@@ -33,7 +33,7 @@ function greyImage(){
         fs.readFile('index.html','utf8', (err, file) => {
             res.end(file)
         })
-    } else if (req.url == '/style') {
+    } else if (req.url == '/style.css') {
         res.writeHead(200, { 'Content-Type' : 'text/css'})
         fs.readFile('style.css', (err, file) => {
             res.end(file)
